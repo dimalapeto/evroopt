@@ -1,0 +1,73 @@
+.home-slider  {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.home-slider > div {
+  flex-basis: 50%;
+  flex-grow: 2;
+  align-self: center;
+  margin: auto;
+}
+.home-slider .slick-slide {
+  padding: .75em;
+}
+.home-slider .slick-prev, .home-slider .slick-next {
+  font-size: 2em;
+  line-height: 1em;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 2em;
+  height: 3em;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+  z-index: 10;
+}
+.home-slider .slick-prev {
+    left: 0%;
+}
+.home-slider .slick-next {
+    right: 0%;
+}
+.home-slider .slick-prev:before {
+    content: '\2190';
+}
+.home-slider .slick-next:before {
+    content: '\2192';
+}
+.home-slider .slick-prev:before, .home-slider .slick-next:before {
+    font-family: 'slick';
+    font-size: 1.5rem;
+    line-height: 1;
+    opacity: 1;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.home-slider .slick-dots {
+    bottom: 1em;
+    z-index: 1;
+}
+.home-slider .slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: #8dc63f;
+}
+.home-slider .slick-dots li button {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+.home-slider .slick-dots li button:before {
+    font-size: 1em;
+    line-height: 1.5em;
+    opacity: .5;
+    color: #8dc63f;
+}

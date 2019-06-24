@@ -1,0 +1,28 @@
+.holding-menu {
+    flex-grow: 4;
+}
+.holding-menu ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+  padding: 0;
+  margin: 0;
+  font-size: .75em;
+}
+
+.holding-menu ul li {
+  display: inline-block;
+  padding-right: .75em;
+}
+
+.holding-menu ul li a:hover {
+  text-decoration: underline;
+  color: #8dc63f;
+}
+
+@media screen and (max-width: 1030px) {
+  .holding-menu {
+    display: none;
+  }
+}

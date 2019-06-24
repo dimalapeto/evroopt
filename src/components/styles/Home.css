@@ -1,0 +1,60 @@
+/* autoprefixer grid: autoplace */
+.home-grid-container {
+  display: grid;
+  grid-template-areas:
+  "slider slider slider slider"
+  "redprice redprice redprice news"
+  "deals deals deals deals"
+  "customers customers customers customers"
+  "partners partners partners partners"
+  "recomend recomend recomend recomend";
+  grid-template-rows: repeat(6, auto);
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: .75em;
+  grid-row-gap: 1em;
+  margin: 0;
+}
+#slider {
+  grid-area: slider;
+}
+#deals {
+  grid-area: deals;
+}
+#redprice {
+  grid-area: redprice;
+}
+#news {
+  grid-area: news;
+}
+#customers {
+  grid-area: customers;
+}
+#services {
+  grid-area: recomend;
+}
+#partners {
+  grid-area: partners;
+}
+
+.home-grid-container * {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.home-grid-container > div, .home-grid-container > article, .home-grid-container > section {
+  /*border: 1px solid #e7e7e7;*/
+  text-align: justify;
+}
+
+@media (max-width: 1200px) {
+  .home-grid-container {
+    grid-template-areas:
+      "slider slider slider slider"
+      "news news news news"
+      "redprice redprice redprice redprice"
+      "deals deals deals deals"
+      "customers customers customers customers"
+      "partners partners partners partners"
+      "recomend recomend recomend recomend";
+    grid-template-rows: repeat(7, auto);
+  }
+}

@@ -1,0 +1,30 @@
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 6.66em;
+}
+
+.header-container div {
+    display: none;
+}
+
+.toggle {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 1029px) {
+  .header-container div {
+    display: block;
+}
+
+  .header-container > * {
+    margin: 0em 1em;
+  }
+
+  .header-container .button {
+    display: inline-flex;
+  }
+}

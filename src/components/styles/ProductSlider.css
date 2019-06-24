@@ -1,0 +1,24 @@
+.product-slider .slick-prev, .product-slider .slick-next {
+  z-index: 10;
+  width: 2rem;
+  height: 3rem;
+}
+.product-slider .slick-prev:before, .product-slider .slick-next:before {
+    font-family: 'slick';
+    font-size: 1.5rem;
+    line-height: 1;
+    opacity: 1;
+    color: #8dc63f;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.product-slider .slick-prev {
+    left: 1%;
+}
+.product-slider .slick-next {
+    right: 1%;
+}
+/*.product-slider .slick-prev:hover .slick-prev:before,
+.product-slider .slick-next:hover .slick-next:before {
+  font-size: 2rem;
+}*/

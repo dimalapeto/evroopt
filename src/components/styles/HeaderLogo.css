@@ -1,0 +1,19 @@
+.header-logo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 1em;
+}
+
+.header-logo img {
+  width: 15.66em;
+  max-height: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  .header-logo img {
+    width: 40vw;
+  }
+}

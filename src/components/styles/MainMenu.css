@@ -1,0 +1,45 @@
+.main-menu, .main-sub-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  font-size: 1.05em;
+  font-weight: 400;
+  flex-grow: 2;
+  margin: 1em;
+}
+.main-sub-menu {
+  font-size: 1em;
+}
+
+.main-menu li, .main-sub-menu li {
+  display: inline-block;
+  padding-right: 1em;
+}
+
+.main-menu li a:hover, .main-sub-menu li a:hover {
+  color: #8dc63f;
+}
+.main-menu li a {
+  display: flex;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1029px) {
+  .main-menu, .main-sub-menu {
+    flex-direction: column;
+    align-content: flex-start;
+  }
+
+  .main-menu li, .main-sub-menu li {
+    padding-bottom: 1em;
+    text-transform: uppercase;
+  }
+
+  .social-menu {
+    padding-left: 1em;
+  }
+}

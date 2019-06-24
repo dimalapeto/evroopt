@@ -1,0 +1,59 @@
+.grid-element {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  animation: fadeInTop .5s ease both;
+}
+@keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.grid-element .block-title {
+  padding: .75rem;
+}
+
+.grid-element .grid_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-flow: row nowrap;
+  padding: .5rem;
+}
+
+.grid-element .block-more {
+  text-align: right;
+  text-transform: uppercase;
+  margin: 0em 1rem .5em 0em;
+}
+
+.centered > .grid_row {
+  flex-direction: row;
+  align-items: center;
+}
+
+.centered .home-item:hover {
+  box-shadow: none;
+}
+
+@media (min-width: 375px) and (max-width: 1199px) {
+  .grid-element .grid_row {
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+  #deals .grid-element .grid_row,
+  #customers .grid-element .grid_row,
+  #services .grid-element .grid_row,
+  #partners .grid-element .grid_row {
+    flex-flow: column nowrap;
+  }
+}

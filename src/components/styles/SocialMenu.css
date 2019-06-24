@@ -1,0 +1,28 @@
+.social-menu {
+  flex-grow: 1;
+}
+
+.social-menu p {
+  padding-right: 1rem;
+}
+
+.social-menu ul {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  padding: 0;
+  margin: 0;
+  font-size: .85em;
+  line-height: 2.5em;
+}
+
+.social-menu ul li {
+  display: inline-block;
+  padding-right: .75em;
+  font-size: 1.35em;
+  color: #b2b0b0;
+}
+
+.social-menu ul li a:hover {
+  color: #8dc63f;
+}

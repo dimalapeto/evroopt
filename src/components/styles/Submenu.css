@@ -1,0 +1,9 @@
+.submenu {
+  border-bottom: 1px solid #f3f5f7;
+}
+
+@media only screen and (max-width: 1029px) {
+  .submenu {
+    display: none;
+  }
+}

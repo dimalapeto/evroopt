@@ -1,0 +1,19 @@
+.hotline {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hotline p {
+  font-size: .9em;
+  line-height: .9em;
+  margin-right: 1em;;
+}
+
+.hotline a {
+  font-size: 1.2em;
+  line-height: 1.2em;
+  color: #001e32;
+  font-weight: 600;
+}
